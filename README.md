@@ -70,6 +70,7 @@ Sama seperti soal a, bedanya kita mengambil product line pada kolom ke4 dan fung
 ```
 Penjelasan :
 Pada soal poin b, didapat produk line Personal Accesories, Camping Equipment, dan Outdoor Protection. Jadi pada soal poin c diambillah untuk setiap prodak line. Lalu ditambahkan quantity nya dimana quantity berada pada kolom 10. Lalu di sort dan diambil tiga teratas untuk setiap produk line pada nomor 2. ’{print $2,$3,$4}’ adalah data pertama,kedua,dan ketiga pada kolom ke6(produk)
+
 3.)) Buatlah sebuah script bash yang dapat menghasilkan password secara acak sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama
 sebagai berikut:
 a. Jika tidak ditemukan file password1.txt maka password acak tersebut disimpan pada file bernama password1.txt
@@ -91,6 +92,7 @@ Jawab =
 ```
 Penjelasan :
 Langkah pertama adalah dengan mengecek folder terlebih dahulu apakah ada atau tidak file yang dimaksud, jika tidak ada, script akan mencetak password acak sebanyak 12 karakter terdiri dari huruf kecil, kapital dan angka dengan penamaan “password1.txt”. Jika file password1.txt sudah ada, maka password acak baru akan disimpan pada file bernama password2.txt dan begitu seterusnya.Script akan mencetak password acak secara berbeda dengan password acak yang sudah ada sebelumnya setiap kali kita menjalankanya.
+
 4.)) Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string manipulation) yang disesuaikan dengan jam dilakukannya backup misalkan sebagai berikut:
 a. Huruf b adalah alfabet kedua, sedangkan saat ini waktu menunjukkan
 pukul 12, sehingga huruf b diganti dengan huruf alfabet yang memiliki
@@ -133,7 +135,7 @@ Penjelasan:
 
 2)) pertama inputkan nama file yang telah diketahui saat menjalankan no 4 jawaban terenkripsi. Variabel hour untuk mengambil inputan 2 dari depan, yaitu jamnya. simpan variabel alfabet kecil dan besar untuk menghindari case sensitive, dan diketik sebanyak 2 kali alfabet untuk menghindari worse case jika z ditambah jam 23. Lalu pada awk, hasil enkripsi dari no4 tadi  yang telah digeser dikembalikan lagi pada asalnya, lalu di print.
 
-5. Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
+5.)) Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
 kriteria berikut:
 
 a. Tidak mengandung string “sudo”, tetapi mengandung string “cron”,
