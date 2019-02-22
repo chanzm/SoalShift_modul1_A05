@@ -5,7 +5,7 @@ Nama : Chaniyah Zulfa M (05111740000115)
        Faqih Fathan I.  (05111740000175)
        
      LAPORAN 1 SISOP 2019
-1.) Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah
+1.)) Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah
 dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah
 nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh
 file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adalah hari
@@ -35,7 +35,7 @@ Pada crontab , buka crontab -e, ketikkan :
  Penjelasan :Pertama, unzip nature.zip lalu buat folder hasil1 untuk menampung file2 didalam nature yang akan di decrypt. Lalu untuk mendecrypt suatu file, lakukan base64 untuk membuka enkripsi, karena hasil decrypt masih dalam bentuk heksa, lalu lakukan perintah ‘xxd -r’ untuk mereverse agar menjadi biner dan bisa terbaca oleh komputer. Setelah terbaca dikomputer, maka file2 didalam folder nature akan terdecrypt didalam folder hasil1.
  Lalu lakukan perintah ‘crontab -e’ untuk mengakses pada waktu tertentu seperti pada soal
 
-2.) Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
+2.)) Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
 untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv.
 Laporan yang diminta berupa:
        a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun 2012.
