@@ -133,9 +133,9 @@ Pada crontab , buka crontab -e, ketikkan :
        0 * * * * /bin/bash /home/chaniyahzm/soal4_enk.sh
 ```
 Penjelasan:
-1)) simpan variabel alfabet kecil dan besar untuk menghindari case sensitive, dan diketik sebanyak 2 kali alfabet untuk menghindari worse case jika z ditambah jam 23,   lalu variable hour untuk jam yang di ambil bagiannya dari date pada linux, variabel name adalah tanggal,bulan,tahun yang diambil pada date. Lalu gunakan awk dan print isi dari syslog, lalu posisi awal adalah  "${kcl:0:26}${bsr:0:26}" untuk mengambil alfabet dari a-z/A-Z, lalu digeser sesuai hournya dan ditaruh hasilnya pada folder hasil4_enk, lalu jalankan crotab setiap jam dengan mengetikkan pada crontab -e seperti diatas
+   a) simpan variabel alfabet kecil dan besar untuk menghindari case sensitive, dan diketik sebanyak 2 kali alfabet untuk menghindari worse case jika z ditambah jam 23,   lalu variable hour untuk jam yang di ambil bagiannya dari date pada linux, variabel name adalah tanggal,bulan,tahun yang diambil pada date. Lalu gunakan awk dan print isi dari syslog, lalu posisi awal adalah  "${kcl:0:26}${bsr:0:26}" untuk mengambil alfabet dari a-z/A-Z, lalu digeser sesuai hournya dan ditaruh hasilnya pada folder hasil4_enk, lalu jalankan crotab setiap jam dengan mengetikkan pada crontab -e seperti diatas
 
-2)) pertama inputkan nama file yang telah diketahui saat menjalankan no 4 jawaban terenkripsi. Variabel hour untuk mengambil inputan 2 dari depan, yaitu jamnya. simpan variabel alfabet kecil dan besar untuk menghindari case sensitive, dan diketik sebanyak 2 kali alfabet untuk menghindari worse case jika z ditambah jam 23. Lalu pada awk, hasil enkripsi dari no4 tadi  yang telah digeser dikembalikan lagi pada asalnya, lalu di print.
+   b) Pertama inputkan nama file yang telah diketahui saat menjalankan no 4 jawaban terenkripsi. Variabel hour untuk mengambil inputan 2 dari depan, yaitu jamnya. simpan variabel alfabet kecil dan besar untuk menghindari case sensitive, dan diketik sebanyak 2 kali alfabet untuk menghindari worse case jika z ditambah jam 23. Lalu pada awk, hasil enkripsi dari no4 tadi  yang telah digeser dikembalikan lagi pada asalnya, lalu di print.
 
 5.)) Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
 kriteria berikut:
