@@ -102,8 +102,10 @@ empat belas, dan seterusnya.
 c. setelah huruf z akan kembali ke huruf a
 d. Backup file syslog setiap jam.
 e. dan buatkan juga bash script untuk dekripsinya.
-    Jawab:
-    1)) Jawaban terenkripsi
+
+ Jawab:
+ 
+   a) Jawaban terenkripsi
 ```
      #!/bin/bash
 hour=`date +"%H"`
@@ -114,7 +116,7 @@ bsr="ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 awk '{print}' /var/log/syslog | tr "${kcl:0:26}${bsr:0:26}" "${kcl:$hour:26}${bsr:$hour:26}" > "/home/chaniyahzm/hasil4_enk/$name"
 ```
-2)) Jawaban terdecrypt
+   b) Jawaban terdecrypt
 ```
 #!/bin/bash
 echo "Input nama file yang ingin di decrypt = "
